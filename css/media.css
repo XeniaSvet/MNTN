@@ -1,0 +1,109 @@
+@media (max-width: 1500px) {
+    .article {
+        column-gap: 30px;
+    }
+    .article__text::before {
+        width: 140px;
+        height: 140px;
+        font-size: 140px;
+    }
+    .article__text {
+        padding-left: 50px;
+        max-width: 50%;
+    }
+    .article__img {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        margin-bottom: 400px;
+    }
+    .header__hero--title {
+        font-size: 68px;
+    }
+    .footer__nav--wrapper {
+        column-gap: 100px;
+    }
+}
+
+@media (max-width: 920px) {
+    .footer__row {
+        flex-direction: column-reverse;
+        row-gap: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        margin-bottom: 300px;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__account {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+    }
+    .mobile-nav-active {
+        display: flex;
+    }
+    .header__hero--title {
+        font-size: 48px;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    }
+    .header__hero--category::before {
+        width: 42px;
+    }
+    .header__hero--category {
+        font-size: 14px;
+        padding-left: 62px;
+    }
+    .header__hero {
+        row-gap: 16px;
+    }
+    .header__row {
+        margin-bottom: 100px;
+    }
+    .article__title {
+        font-size: 44px;
+    }
+    .article__text p {
+        font-size: 16px;
+    }
+    .article__read {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 720px) {
+    .header {
+        margin-bottom: 150px;
+    }
+    .article {
+        flex-direction: column-reverse;
+        margin-bottom: 100px;
+        align-items: flex-start;
+    }
+    .article:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    .article__text {
+        max-width: 100%;
+    }
+    .article__img {
+        max-width: 320px;
+        width: 100%;
+        margin-bottom: 75px;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer__nav--wrapper {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+}
